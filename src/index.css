@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.avatar {
+  height: 50px;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.login-user{
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #f5f5f5;
+}
+
+.login-user:hover{
+  background-color: #e5e5e5;
+}
+
+.question-list-item{
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #f5f5f5;
+}
+
+.question-list-item a{
+  color: black;
+  text-decoration: none;
+}
+
+.question-list-item a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.question-list-item:hover{
+  background-color: #e5e5e5;
+}
+
+.question-list-heading{
+  padding: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #f5f5f5;
+}
+
+.question-avatar{
+  width: 250px;
+  height: 250px;
+}
+
+.question-option{
+  padding: 100px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.question-option:hover{
+  background-color: #e5e5e5;
+}
+
+.question-option-answered{
+  cursor: default;
+}
+
+.question-option-answered:hover{
+  background-color: #f5f5f5;
+}
+
+.user-answer{
+  background-color: #67f355;
+}
+
+.user-answer:hover{
+  background-color: #67f355;
+}
+
+.btn-div{
+  padding: 20px;
+}
