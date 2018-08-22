@@ -10,7 +10,6 @@ class Nav extends Component {
     }
 
     render () {
-        const { authedUser, users } = this.props
         return (
             <nav className='navbar navbar-expand-lg navbar-light bg-light'>
                 <div className='navbar-nav w-100 order-0'>
@@ -33,15 +32,6 @@ class Nav extends Component {
             </nav>
         )
     }
-}
-
-const mapStateToProps = (states) => {
-    const { users, authedUser }  = this.states
-
-    return ({
-        users,
-        authedUser
-    })
 }
 
 export default connect()(Nav)

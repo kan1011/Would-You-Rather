@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   render() {
-    const { authedUser, users, loading } = this.props
+    const { loading } = this.props
 
     return (
       <Router>
@@ -27,7 +27,7 @@ class App extends Component {
           
           {loading === true
             ? <div className="text-center">Loading</div>
-            // : authedUser === null
+            // :  === null
             //     ? <Redirect to='/login'/>
             //     : <Redirect to='/'/> 
             :
@@ -39,7 +39,8 @@ class App extends Component {
                   <Route path='/questions/:question_id' component={QuestionPage} />
                   <Route path='/add' component={NewQuestionPage}/>
                   <Route path='/leaderboard' component={LeaderBoardPage} />
-                  <Route component={Page404} />
+                  <Route path='/404notfound' exact component={Page404} />
+                  <Redirect from='*' to='/404notfound'/>
                 </Switch>
               </div>
           }
@@ -50,11 +51,9 @@ class App extends Component {
 }
 
 const mapStateToProps = (states) => {
-  const { users, authedUser, loadingBar } = states
+  const { loadingBar } = states
 
   return {
-    authedUser,
-    users,
     loading: loadingBar.default === 1
   }
 }

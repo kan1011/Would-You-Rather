@@ -25,6 +25,12 @@ class QuestionPage extends Component{
             )
         }
 
+        if (question === undefined){
+            return (
+                <Redirect from='*' to='/404notfound'/>
+            )
+        }
+
         const { author, optionOne, optionTwo } = question
         const { name, avatarURL } = users[author]
         const { answers } = users[authedUser]
